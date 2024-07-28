@@ -1,0 +1,8 @@
+[plugins]
+lombok = "io.freefair.lombok:8.4"
+paperweight-userdev = "io.papermc.paperweight.userdev:1.7.1"
+shadow = "io.github.goooler.shadow:8.1.8"
+
+[libraries]
+jetbrains-annotations = "org.jetbrains:annotations:24.0.1"
+spigot = "org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT"
