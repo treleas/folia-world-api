@@ -48,8 +48,7 @@ tasks.build {
 
 tasks.shadowJar {
     listOf("v1_20_R3", "v1_20_R4").forEach {
-        val that = project(":$it")
-        val task = that.tasks.named("reobfJar")
+        val task = project(":$it").tasks.named("reobfJar")
         dependsOn(task)
         from(zipTree(task.map { it.outputs.files.singleFile }))
     }
@@ -67,11 +66,12 @@ publishing {
             groupId = project.group.toString()
             artifactId = project.name
             version = "${project.version}"
+            description ="${project.description}"
 
             artifact(tasks.shadowJar) { classifier = null }
 
             pom {
-                name.set("Cupola")
+                name.set("FoliaWorldAPI")
                 description.set(project.description)
                 url.set("https://dev.treleas.ru/treleas/folia-world-api")
                 packaging = "jar"
