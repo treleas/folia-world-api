@@ -1,6 +1,6 @@
 [plugins]
 lombok = "io.freefair.lombok:8.4"
-paperweight-userdev = "io.papermc.paperweight.userdev:1.7.1"
+paperweight-userdev = "io.papermc.paperweight.userdev:1.7.2"
 shadow = "io.github.goooler.shadow:8.1.8"
 
 [libraries]
