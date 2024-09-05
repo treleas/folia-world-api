@@ -5,7 +5,7 @@ plugins {
 
 dependencies {
     paperweight.foliaDevBundle("1.20.6-R0.1-SNAPSHOT")
-    pluginRemapper("net.fabricmc:tiny-remapper:0.10.3:fat")
+    pluginRemapper("net.fabricmc:tiny-remapper:0.10.4:fat")
     compileOnly(project(":api"))
 }
 
